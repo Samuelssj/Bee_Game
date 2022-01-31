@@ -9,9 +9,10 @@ class Obj{
     }
 
     draw(){
+         var img = new Image();
+         img.src = this.color;
+         canvas.drawImage(img,this.x,this.y, this.width, this.heigth);
 
-        canvas.fillStyle = this.color;
-        canvas.fillRect(this.x,this.y,this.width,this.heigth);
     }
 }
 
@@ -25,9 +26,10 @@ class Bee extends Obj{
 
 class Spider extends Obj{
     move(){
-    this.y +=2;
+    this.y +=4;
     if(this.y > 900){
         this.y = -50;
+        this.x = Math.random() * (400-0);
     }
 
     }
