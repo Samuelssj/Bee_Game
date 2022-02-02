@@ -1,9 +1,9 @@
 document.addEventListener("keydown", function(e){
     if(e.key === "a"){
-       bee.dir = -1;
+       bee.dir = -3;
     }
     else if(e.key ==="d"){
-        bee.dir = 1;
+        bee.dir = 3;
     }
 
 });
